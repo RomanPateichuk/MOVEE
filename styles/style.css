@@ -1,0 +1,142 @@
+#wrapper {
+  width: 1920px;
+}
+/*links*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  background-color: #fecc00;
+  height: 650px;
+  padding-top: 42px;
+}
+#header-content {
+  margin-left: 307px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+}
+
+#logo {
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#header-nav {
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  width: 355px;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+}
+
+#header-nav li:not(:last-child) {
+  padding-right: 48px;
+}
+
+#phone {
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 1px solid currentColor;
+}
+
+#mainTitle {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 480px;
+}
+
+#mainTitle > h1 {
+  font-family: "Montserrat-bolt", Arial, sans-serif;
+  font-size: 68px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+#mainTitle > p {
+  padding-top: 14px;
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#mainButton {
+  position: relative;
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  width: 304px;
+  height: 60px;
+  background-color: red;
+  font-weight: 600;
+  margin-top: 45px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 16px;
+  color: #f2f2f2;
+  border: 0px;
+  z-index: 2;
+}
+
+#divOffset {
+  position: absolute;
+  left: 317px;
+  top: 399px;
+  width: 304px;
+  height: 60px;
+  border: 2px solid #f2f2f2;
+  z-index: 1;
+}
+
+#progress {
+  display: flex;
+  font-family: "Montserrat-regular", Arial, sans-serif;
+  font-size: 16px;
+  width: 509px;
+  padding-top: 76px;
+  justify-content: space-between;
+}
+
+#progress p {
+  display: inline-block;
+  width: 100px;
+  padding-left: 5px;
+}
+
+#rectange3 {
+  position: absolute;
+  height: 605px;
+  margin-top: -522px;
+  margin-left: 920px;
+  z-index: 2;
+}
+
+#rectange2 {
+  position: absolute;
+  left: 1205px;
+  top: 180px;
+  z-index: 1;
+}
+
+#callButton {
+  display: flex;
+  width: 136px;
+  height: 136px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 1460px;
+  margin-top: -95px;
+  background-color: rgba(61, 155, 233);
+  background-clip: content-box;
+  border: 20px solid rgba(61, 155, 233, 0.3);
+}
