@@ -1,5 +1,5 @@
 #wrapper {
-  width: 1920px;
+  width: 120rem;
 }
 /*links*/
 a {
@@ -10,42 +10,42 @@ a {
 /* header */
 header {
   background-color: #fecc00;
-  height: 650px;
-  padding-top: 42px;
+  height: 40.6rem;
+  padding-top: 2.6rem;
 }
 #header-content {
-  margin-left: 307px;
+  margin-left: 19.1rem;
 }
 
 #navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1300px;
+  width: 81.2rem;
 }
 
 #logo {
   font-family: "Montserrat-medium", Arial, sans-serif;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.8rem;
 }
 
 #header-nav {
   font-family: "Montserrat-regular", Arial, sans-serif;
-  width: 355px;
+  width: 22.1rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.1rem;
   display: flex;
 }
 
 #header-nav li:not(:last-child) {
-  padding-right: 48px;
+  padding-right: 3rem;
 }
 
-#phone {
+#phone a {
   font-family: "Montserrat-medium", Arial, sans-serif;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   border-bottom: 1px solid currentColor;
 }
 
@@ -82,9 +82,12 @@ header {
   font-size: 24px;
   text-align: center;
   padding-top: 16px;
-  color: #f2f2f2;
   border: 0px;
   z-index: 2;
+}
+
+#mainButton a {
+  color: #f2f2f2;
 }
 
 #divOffset {
@@ -114,8 +117,8 @@ header {
 
 #rectange3 {
   position: absolute;
-  height: 605px;
-  margin-top: -522px;
+  height: 550px;
+  margin-top: -467px;
   margin-left: 920px;
   z-index: 2;
 }
@@ -139,4 +142,24 @@ header {
   background-color: rgba(61, 155, 233);
   background-clip: content-box;
   border: 20px solid rgba(61, 155, 233, 0.3);
+}
+
+#callButton :hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+#header-nav > li:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+#phone a:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+#mainButton a:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
