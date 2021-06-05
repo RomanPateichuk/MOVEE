@@ -1,170 +1,141 @@
-@media (min-width: 900px) and (max-width: 1200px) {
-  #wrapper {
-    width: 120rem;
-  }
-  /*links*/
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  /* header */
-  header {
-    background-color: #fecc00;
-    height: 40.6rem;
-    padding-top: 2.6rem;
-  }
-  #header-content {
-    margin-left: 19.1rem;
-  }
-
-  #navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 81.2rem;
-  }
-
-  #logo {
-    font-family: "Montserrat-medium", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-  }
-
-  #header-nav {
-    font-family: "Montserrat-regular", Arial, sans-serif;
-    width: 22.1rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    display: flex;
-  }
-
-  #header-nav li:not(:last-child) {
-    padding-right: 3rem;
-  }
-
-  #phone a {
-    font-family: "Montserrat-medium", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    border-bottom: 1px solid currentColor;
-  }
-
-  #mainTitle {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 480px;
-  }
-
-  #mainTitle > h1 {
-    font-family: "Montserrat-bolt", Arial, sans-serif;
-    font-size: 68px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-  }
-
-  #mainTitle > p {
-    padding-top: 14px;
-    font-family: "Montserrat-medium", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-  }
-
-  #mainButton {
-    position: relative;
-    font-family: "Montserrat-regular", Arial, sans-serif;
-    width: 304px;
-    height: 60px;
-    background-color: red;
-    font-weight: 600;
-    margin-top: 45px;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 16px;
-    border: 0px;
-    z-index: 2;
-  }
-
-  #mainButton a {
-    color: #f2f2f2;
-  }
-
-  #divOffset {
-    position: absolute;
-    left: 317px;
-    top: 399px;
-    width: 304px;
-    height: 60px;
-    border: 2px solid #f2f2f2;
-    z-index: 1;
-  }
-
-  #progress {
-    display: flex;
-    font-family: "Montserrat-regular", Arial, sans-serif;
-    font-size: 16px;
-    width: 509px;
-    padding-top: 76px;
-    justify-content: space-between;
-  }
-
-  #progress p {
-    display: inline-block;
-    width: 100px;
-    padding-left: 5px;
-  }
-
-  #rectange3 {
-    position: absolute;
-    height: 550px;
-    margin-top: -467px;
-    margin-left: 920px;
-    z-index: 2;
-  }
-
-  #rectange2 {
-    position: absolute;
-    left: 1205px;
-    top: 180px;
-    z-index: 1;
-  }
-
-  #callButton {
-    display: flex;
-    width: 136px;
-    height: 136px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-left: 1460px;
-    margin-top: -95px;
-    background-color: rgba(61, 155, 233);
-    background-clip: content-box;
-    border: 20px solid rgba(61, 155, 233, 0.3);
-  }
-
-  #callButton :hover {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
-
-  #header-nav > li:hover {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
-
-  #phone a:hover {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
-
-  #mainButton a:hover {
-    opacity: 0.5;
-    transition: opacity 0.5s;
-  }
+body {
+  font-family: "Montserrat-regular", Arial, sans-serif;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+.wrapper {
+  width: 120rem;
+}
+/*links*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  background-color: #fecc00;
+  background-image: url(../img/express.png), url(../img/minibus.png);
+  background-repeat: no-repeat;
+  background-position: 60% 100%, 85% 54%;
+  height: 40.6rem;
+  padding-top: 2.6rem;
+}
+.header-content {
+  margin-left: 19.1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 81.2rem;
+}
+
+.navigation p {
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.navigation ul {
+  width: 22.1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+.header-nav li:not(:last-child) {
+  padding-right: 3rem;
+}
+
+.phone {
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 1px solid currentColor;
+}
+
+.mainTitle {
+  margin-top: 4.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30rem;
+}
+
+.mainTitle > h1 {
+  font-family: "Montserrat-bolt", Arial, sans-serif;
+  font-size: 4.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.06px;
+}
+
+.mainTitle > p {
+  padding-top: 0.8rem;
+  font-family: "Montserrat-medium", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.mainButton {
+  display: flex;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  width: 19rem;
+  height: 3.75rem;
+  background-color: red;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  border: 0rem;
+  z-index: 2;
+  color: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  display: flex;
+  font-size: 1rem;
+  width: 31.81rem;
+  padding-top: 4.75rem;
+  justify-content: space-between;
+}
+
+.progress-bar p {
+  display: inline-block;
+  width: 6.25rem;
+  padding-left: 0.31rem;
+}
+
+.callButton {
+  border-radius: 50%;
+  margin-left: 92.5rem;
+  margin-top: -4.5rem;
+  background-color: rgba(61, 155, 233);
+  box-shadow: 1px 1px 0px 20px rgba(61, 155, 233, 0.3);
+}
+
+.callButton img:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.header-nav li a:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.phone:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.mainButton:hover {
+  box-shadow: 12px 12px 2px 1px rgb(235, 230, 230);
+  transition: 0.5s;
+}
+
+.callButton:hover {
+  box-shadow: 1px 1px 0px 20px rgba(61, 155, 233);
+  transition: 0.5s;
 }
