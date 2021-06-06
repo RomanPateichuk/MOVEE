@@ -79,7 +79,7 @@ header {
 
 .mainButton {
   display: flex;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  position: relative;
   width: 19rem;
   height: 3.75rem;
   background-color: red;
@@ -91,6 +91,16 @@ header {
   color: #f2f2f2;
   justify-content: center;
   align-items: center;
+}
+
+#shadowButton {
+  position: absolute;
+  left: 317px;
+  top: 399px;
+  width: 304px;
+  height: 60px;
+  border: 2px solid #f2f2f2;
+  z-index: 1;
 }
 
 .progress-bar {
@@ -131,7 +141,7 @@ header {
 }
 
 .mainButton:hover {
-  box-shadow: 12px 12px 2px 1px rgb(235, 230, 230);
+  box-shadow: 11px 15px 2px 1px rgb(235, 230, 230);
   transition: 0.5s;
 }
 
