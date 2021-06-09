@@ -1,15 +1,14 @@
 body {
-  font-family: "Montserrat-regular", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .wrapper {
-  width: 120rem;
   margin: 0 auto;
 }
 /*links*/
 a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 /* header */
@@ -18,7 +17,7 @@ header {
   background-image: url(../img/express.png), url(../img/minibus.png);
   background-repeat: no-repeat;
   background-position: 60% 100%, 85% 54%;
-  height: 40.6rem;
+  min-height: 40.6rem;
   padding-top: 2.6rem;
 }
 .header-content {
@@ -33,9 +32,9 @@ header {
 }
 
 .navigation p {
-  font-family: "Montserrat-medium", Arial, sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .navigation .header-nav {
@@ -49,7 +48,6 @@ header {
 }
 
 .phone {
-  font-family: "Montserrat-medium", Arial, sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   border-bottom: 0.06rem solid currentColor;
@@ -63,24 +61,27 @@ header {
 }
 
 .mainTitle > h1 {
-  font-family: "Montserrat-bolt", Arial, sans-serif;
+  font-weight: 900;
   font-size: 4.25rem;
   line-height: 1.1;
 }
 
 .mainTitle > p {
   padding-top: 0.8rem;
-  font-family: "Montserrat-medium", Arial, sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+.mainButtonWrapper {
+  position: relative;
 }
 
 .mainButton {
   display: flex;
   position: relative;
   width: 19rem;
-  height: 3.75rem;
-  background-color: red;
+  height: 4rem;
+  background-color: #ff0000;
   font-weight: 600;
   margin-top: 3rem;
   font-size: 1.5rem;
@@ -93,8 +94,8 @@ header {
 
 .shadowButton {
   position: absolute;
-  left: 19.8rem;
-  top: 24.93rem;
+  left: 0.625rem;
+  top: 0.75rem;
   width: 19rem;
   height: 3.75rem;
   border: 0.125rem solid #f2f2f2;
@@ -104,23 +105,24 @@ header {
 .progress-bar {
   display: flex;
   font-size: 1rem;
-  width: 31.81rem;
-  padding-top: 4.75rem;
-  justify-content: space-between;
+  padding-top: 2.5rem;
+  align-items: center;
+}
+
+.phoneButtonWrapper {
+  margin-left: auto;
 }
 
 .progress-bar p {
   display: inline-block;
-  width: 6.25rem;
+  width: 8.3rem;
   padding-left: 0.31rem;
 }
 
 .callButton {
   border-radius: 50%;
-  margin-left: 92.5rem;
-  margin-top: -4.5rem;
   background-color: rgba(61, 155, 233);
-  box-shadow: 0.0625rem 0.0625rem 0rem 0.0625rem rgba(61, 155, 233, 0.3);
+  box-shadow: 0 0 0 1.25rem rgba(61, 155, 233, 0.3);
 }
 
 .callButton img:hover {
@@ -129,12 +131,12 @@ header {
 }
 
 .header-nav li a:hover {
-  color: red;
+  color: #ff0000;
   transition: 0.5s;
 }
 
 .phone:hover {
-  color: red;
+  color: #ff0000;
   transition: 0.5s;
 }
 
@@ -152,10 +154,195 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 20rem) {
+@media (max-width: 1690px) and (min-width: 1150px) {
+  .navigation .header-nav {
+    font-size: 1.4rem;
+  }
+
+  header {
+    background-image: url(../img/minibus.png);
+    background-repeat: no-repeat;
+    background-position: 75% 54%;
+  }
+
+  .header-content {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width: 1151px) and (min-width: 980px) {
+  .navigation .header-nav {
+    font-size: 1.4rem;
+  }
+
+  header {
+    background-image: none;
+  }
+  .phone {
+    display: none;
+  }
+
+  .header-content {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .mainTitle > h1 {
+    text-align: center;
+  }
+
+  .mainTitle > p {
+    text-align: center;
+  }
+
+  .mainButton {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .shadowButton {
+    display: none;
+  }
+
+  .mainTitle {
+    width: 100%;
+  }
+}
+
+@media (max-width: 981px) and (min-width: 637px) {
+  .navigation .header-nav {
+    font-size: 1.4rem;
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header {
+    background-image: none;
+  }
+  .phone {
+    display: none;
+  }
+
+  .header-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.81rem;
+    padding-right: 2.81rem;
+  }
+
+  .mainTitle > h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .mainTitle > p {
+    text-align: center;
+  }
+
+  .mainButton {
+    margin: 0 auto;
+    margin-top: 9.37rem;
+  }
+
+  .shadowButton {
+    display: none;
+  }
+
+  .mainTitle {
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  .callButton {
+    display: none;
+  }
+
+  .phoneButtonWrapper {
+    margin-left: 0;
+  }
+
+  .progress-bar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 638px) and (min-width: 415px) {
+  .navigation .header-nav {
+    font-size: 1.4rem;
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  header {
+    background-image: url(../img/express.png);
+    background-position: 50% 74%;
+    background-size: 25%;
+  }
+  .phone {
+    display: none;
+  }
+
+  .header-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.81rem;
+    padding-right: 2.81rem;
+  }
+
+  .mainTitle > h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .mainTitle > p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .mainButton {
+    margin: 0 auto;
+    margin-top: 1.56rem;
+  }
+
+  .shadowButton {
+    display: none;
+  }
+
+  .mainTitle {
+    width: 100%;
+  }
+
+  .callButton {
+    display: none;
+  }
+
+  .phoneButtonWrapper {
+    margin-left: 0;
+  }
+
+  .progress-bar {
+    justify-content: center;
+    padding-top: 16rem;
+  }
+
+  .progress-bar li img {
+    display: none;
+  }
+
+  .progress-bar li p {
+    text-align: center;
+  }
+}
+@media (max-width: 416px) {
   .wrapper {
-    width: 20rem;
-    height: 37.5rem;
+    min-height: 37.5rem;
   }
 
   header {
@@ -190,7 +377,7 @@ header {
   }
 
   .header-content {
-    margin: 0rem 0rem;
+    margin: 0;
   }
 
   .navigation > .header-nav,
