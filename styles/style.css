@@ -277,7 +277,7 @@ header {
     display: none;
   }
 
-  .navigation p{
+  .navigation p {
     font-size: 1.5rem;
   }
 
@@ -286,10 +286,9 @@ header {
   }
 
   header {
-    
-      background-image: url(../img/express.png);
-      background-position: 55% 70%;
-      background-size: 16rem; 
+    background-image: url(../img/express.png);
+    background-position: 55% 70%;
+    background-size: 16rem;
   }
   .phone {
     display: none;
@@ -314,7 +313,7 @@ header {
 
   .mainButton {
     margin: 0 auto;
-    margin-top: 20.6rem;
+    margin-top: 22rem;
     width: 100%;
   }
 
@@ -324,7 +323,7 @@ header {
 
   .mainTitle {
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 1.6rem;
   }
 
   .callButton {
