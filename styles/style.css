@@ -141,7 +141,7 @@ header {
 }
 
 .mainButton:hover {
-  box-shadow: 0.68rem 0.93rem 0.125rem 0.0625rem rgb(235, 230, 230);
+  box-shadow: 0.625rem 0.75rem 0.125rem 0.25rem rgb(235, 230, 230);
   transition: 0.5s;
 }
 
@@ -152,6 +152,101 @@ header {
 
 .menu {
   display: none;
+}
+
+/* second block */
+
+h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.h2_second {
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
+}
+
+.itemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1% 18% -1% 18%;
+  justify-content: space-around;
+}
+
+.number {
+  display: inline-block;
+  font-size: 3.125rem;
+  text-shadow: 0.125rem 0.125rem #f9fc28;
+}
+
+.item .workName {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-left: 2.4rem;
+}
+
+.item .workDescription {
+  font-size: 1rem;
+  margin-left: 6.25rem;
+}
+
+.itemsWrapper div {
+  width: 31.5rem;
+  margin: 1%;
+}
+
+/*third block*/
+
+.priceWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.h2_third {
+  margin-top: 8%;
+  margin-bottom: 3.5%;
+}
+.priceItem {
+  display: flex;
+  margin: 2%;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 26.31rem;
+  padding-top: 3rem;
+  border: 0.06rem solid yellow;
+}
+
+.priceItem ul li {
+  text-align: center;
+  padding-bottom: 2.25rem;
+}
+
+.priceItem h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 3.75rem;
+}
+
+.priceItem p {
+  font-size: 1.875rem;
+  font-weight: 600;
+  padding-top: 2.125rem;
+  padding-bottom: 3.25rem;
+}
+
+.priceItem .orderButton {
+  width: 15.625rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: #fed100;
+  border: 0;
+  height: 3.125rem;
+  margin-bottom: 4.875rem;
 }
 
 @media (max-width: 1690px) and (min-width: 1150px) {
@@ -170,7 +265,11 @@ header {
     margin-right: 10rem;
   }
 }
-
+@media (max-width: 1151px) {
+  .mainButton:hover {
+    box-shadow: none;
+  }
+}
 @media (max-width: 1151px) and (min-width: 980px) {
   .navigation .header-nav {
     font-size: 1.4rem;
@@ -198,7 +297,7 @@ header {
 
   .mainButton {
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 1.156rem;
   }
 
   .shadowButton {
