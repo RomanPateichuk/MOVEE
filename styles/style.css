@@ -388,6 +388,17 @@ header {
 /* media */
 
 /* header */
+
+@media (min-width: 2000px) {
+  .itemsWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 @media (max-width: 1690px) and (min-width: 1150px) {
   .navigation .header-nav {
     font-size: 1.4rem;
@@ -402,6 +413,12 @@ header {
   .header-content {
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+
+  /* second block*/
+
+  .itemsWrapper {
+    margin: -1% 10% -1% 10%;
   }
 }
 @media (max-width: 1151px) {
@@ -507,6 +524,27 @@ header {
     justify-content: center;
     padding-top: 5rem;
   }
+
+  /*second block */
+  .itemsWrapper {
+    margin: -1% 10% -1% 10%;
+  }
+
+  /*third block*/
+  .priceWrapper div:last-child {
+    display: none;
+  }
+
+  .priceWrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  /*fourth block*/
+
+  .sliderLeftPanel ul {
+    display: none;
+  }
 }
 
 @media (max-width: 711px) and (min-width: 415px) {
@@ -583,8 +621,58 @@ header {
   .progress-bar li p {
     text-align: center;
   }
+
+  /*second block */
+
+  .itemsWrapper {
+    justify-content: center;
+  }
+
+  .item .workDescription {
+    display: none;
+  }
+
+  .item .workName {
+    margin-left: 5%;
+  }
+
+  .item .workName {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 1rem;
+    width: 65%;
+  }
+  .h2_howWork {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+
+  /*third block*/
+  .priceWrapper div:last-child {
+    display: none;
+  }
+
+  .priceWrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
-@media (max-width: 416px) {
+
+@media (max-width: 556px) and (min-width: 416px) {
+  /*third block*/
+
+  .priceWrapper :nth-last-child(2) {
+    display: none;
+  }
+
+  .priceWrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 417px) {
   .wrapper {
     min-height: 37.5rem;
   }
@@ -642,6 +730,69 @@ header {
   .mainButton {
     margin: 20.93rem auto 0 auto;
     width: 85%;
+  }
+
+  .itemsWrapper {
+    margin: 0;
+  }
+  /*second block */
+  .item .workDescription {
+    display: none;
+  }
+
+  .item .workName {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 1rem;
+    width: 65%;
+  }
+
+  .itemsWrapper div {
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .h2_howWork {
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+
+  /*third block*/
+
+  .priceWrapper div:last-child {
+    display: none;
+  }
+
+  .priceWrapper div:first-child {
+    display: none;
+  }
+
+  .priceWrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .priceItem {
+    border: none;
+    width: 90%;
+  }
+
+  h2 span {
+    font-size: 1rem;
+    margin: 5%;
+  }
+
+  .priceItem h3 {
+    padding-bottom: 2rem;
+  }
+
+  .orderButton {
+    width: 100%;
   }
 }
 
