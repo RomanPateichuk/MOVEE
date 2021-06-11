@@ -282,12 +282,9 @@ header {
 }
 
 .carButtonWrapper button {
-  min-width: 30%;
+  padding: 1.25rem 3.125rem 1.25rem 3.125rem;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 0%;
-  margin-top: 0%;
-  min-height: 3.125rem;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   font-size: 2vh;
@@ -360,8 +357,6 @@ header {
 }
 
 .reviewDescription {
-  min-width: 26.25rem;
-  min-height: 12.18rem;
   padding-right: 2.81rem;
   padding-top: 1.18rem;
   padding-bottom: 1.125rem;
@@ -657,6 +652,12 @@ header {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  /*4*/
+  .carButtonWrapper button {
+    padding: 5% 10% 5% 10%;
+    border: none;
+  }
 }
 
 @media (max-width: 556px) and (min-width: 416px) {
@@ -783,8 +784,7 @@ header {
   }
 
   h2 span {
-    font-size: 1rem;
-    margin: 5%;
+    display: none;
   }
 
   .priceItem h3 {
@@ -793,6 +793,12 @@ header {
 
   .orderButton {
     width: 100%;
+  }
+
+  /*4*/
+  .carButtonWrapper button {
+    padding: 5% 10% 5% 10%;
+    border: none;
   }
 }
 
