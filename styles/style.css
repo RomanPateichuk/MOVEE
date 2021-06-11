@@ -5,7 +5,38 @@ body {
 .wrapper {
   margin: 0 auto;
 }
-/*links*/
+/*  h  */
+h2,
+h3,
+h2 > span {
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+h2 span {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/*button*/
+
+.orderButton {
+  width: 15.625rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: #fed100;
+  border: 0;
+  height: 3.125rem;
+}
+
+/* links */
 a {
   text-decoration: none;
   color: #000000;
@@ -156,15 +187,9 @@ header {
 
 /* second block */
 
-h2 {
-  text-align: center;
-  font-size: 1.875rem;
-  font-weight: 600;
-}
-
-.h2_second {
-  padding-top: 6.25rem;
-  padding-bottom: 3.75rem;
+.h2_howWork {
+  padding-top: 5%;
+  padding-bottom: 3.5%;
 }
 
 .itemsWrapper {
@@ -197,7 +222,7 @@ h2 {
   margin: 1%;
 }
 
-/*third block*/
+/* third block */
 
 .priceWrapper {
   display: flex;
@@ -227,9 +252,11 @@ h2 {
 }
 
 .priceItem h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
   padding-bottom: 3.75rem;
+}
+
+.priceItem .orderButton {
+  margin-bottom: 4.875rem;
 }
 
 .priceItem p {
@@ -239,16 +266,128 @@ h2 {
   padding-bottom: 3.25rem;
 }
 
-.priceItem .orderButton {
-  width: 15.625rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-  background-color: #fed100;
-  border: 0;
-  height: 3.125rem;
-  margin-bottom: 4.875rem;
+/* fourth block */
+
+.h2_carPark {
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
+.carButtonWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+}
+
+.carButtonWrapper button {
+  min-width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  min-height: 3.125rem;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  font-size: 2vh;
+}
+
+.sliderWrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 33.75rem;
+}
+
+.sliderWrapper img {
+  align-self: center;
+}
+
+.sliderWrapper .leftSliderButton {
+  margin-right: 4%;
+}
+
+.sliderWrapper .rightSliderButton {
+  margin-left: 4%;
+}
+
+.sliderLeftPanel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6%;
+}
+
+.sliderLeftPanel h3 {
+  margin-top: 34%;
+}
+.sliderLeftPanel ul li:before {
+  content: "\2713\2003\2003";
+}
+.sliderLeftPanel ul li {
+  padding-top: 35px;
+}
+
+.sliderWrapper .slideImg {
+  width: 35%;
+  height: 50%;
+  align-self: center;
+}
+
+.sliderLeftPanel .orderButton {
+  margin-top: 15%;
+}
+
+/* review Block */
+
+.reviewWrapper {
+  background-color: #fed100;
+  min-height: 41.5rem;
+}
+
+.reviewWrapper h2 {
+  padding-top: 5%;
+  padding-bottom: 3.5%;
+}
+
+.reviewWrapper h3 {
+  padding-bottom: 0.625rem;
+}
+
+.reviewWrapper .reviewsBlock {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16%;
+}
+
+.reviewDescription {
+  min-width: 26.25rem;
+  min-height: 12.18rem;
+  padding-right: 2.81rem;
+  padding-top: 1.18rem;
+  padding-bottom: 1.125rem;
+  line-height: 1.56rem;
+}
+
+.stars {
+  display: inline-block;
+  background-image: url(../img/star.png);
+  width: 19%;
+  padding-top: 0.93rem;
+  margin-left: 1rem;
+}
+
+.allReviews {
+  display: block;
+  width: 15.625rem;
+  height: 3.125rem;
+  margin: 3% auto 0 auto;
+  background-color: transparent;
+  border: 1px solid #333333;
+}
+
+/* media */
+
+/* header */
 @media (max-width: 1690px) and (min-width: 1150px) {
   .navigation .header-nav {
     font-size: 1.4rem;
@@ -505,3 +644,8 @@ h2 {
     width: 85%;
   }
 }
+
+/* main block  */
+/* second block */
+
+/* thirdBlock */
