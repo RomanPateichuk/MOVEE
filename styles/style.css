@@ -287,7 +287,7 @@ header {
   margin-right: 5%;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
-  font-size: 2vh;
+  font-size: 1.25rem;
 }
 
 .sliderWrapper {
@@ -298,6 +298,8 @@ header {
 
 .sliderWrapper img {
   align-self: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .sliderWrapper .leftSliderButton {
@@ -325,8 +327,6 @@ header {
 }
 
 .sliderWrapper .slideImg {
-  width: 35%;
-  height: 50%;
   align-self: center;
 }
 
@@ -334,6 +334,9 @@ header {
   margin-top: 15%;
 }
 
+.dots {
+  display: none;
+}
 /* review Block */
 
 .reviewWrapper {
@@ -350,14 +353,18 @@ header {
   padding-bottom: 0.625rem;
 }
 
-.reviewWrapper .reviewsBlock {
+.reviewsBlock {
   display: flex;
   justify-content: space-between;
   margin: 0 16%;
 }
 
+.reviewItem {
+  flex-basis: 31.25rem;
+  margin: 1rem;
+}
+
 .reviewDescription {
-  padding-right: 2.81rem;
   padding-top: 1.18rem;
   padding-bottom: 1.125rem;
   line-height: 1.56rem;
@@ -366,7 +373,7 @@ header {
 .stars {
   display: inline-block;
   background-image: url(../img/star.png);
-  width: 19%;
+  width: 5rem;
   padding-top: 0.93rem;
   margin-left: 1rem;
 }
@@ -458,6 +465,42 @@ header {
   .mainTitle {
     width: 100%;
   }
+
+  /*fourth block*/
+
+  .rightSliderButton,
+  .leftSliderButton {
+    display: none;
+  }
+
+  .sliderWrapper {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .sliderLeftPanel {
+    margin-right: 0;
+    align-items: center;
+  }
+  .sliderWrapper img {
+    order: -1;
+  }
+
+  .sliderLeftPanel h3 {
+    margin-top: 0;
+  }
+
+  .sliderLeftPanel .orderButton {
+    margin: 5% 0;
+  }
+
+  /*reviews block*/
+  .reviewsBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
 }
 
 @media (max-width: 981px) and (min-width: 710px) {
@@ -537,8 +580,44 @@ header {
 
   /*fourth block*/
 
-  .sliderLeftPanel ul {
+  .rightSliderButton,
+  .leftSliderButton {
     display: none;
+  }
+
+  .sliderWrapper {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .sliderLeftPanel {
+    margin-right: 0;
+    align-items: center;
+  }
+  .sliderWrapper img {
+    order: -1;
+  }
+
+  .sliderLeftPanel h3 {
+    margin-top: 0;
+  }
+
+  .sliderLeftPanel .orderButton {
+    margin: 5% 0;
+  }
+
+  /*reviews block*/
+  .reviewsBlock div:last-child {
+    display: none;
+  }
+
+  .reviewsBlock {
+    margin: 0px 5%;
+  }
+
+  .reviewWrapper {
+    min-height: 35rem;
   }
 }
 
@@ -653,10 +732,64 @@ header {
     margin-right: 10%;
   }
 
-  /*4*/
+  /*fourth block*/
+
+  .rightSliderButton,
+  .leftSliderButton {
+    display: none;
+  }
+
+  .sliderWrapper {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .sliderLeftPanel {
+    margin-right: 0;
+    align-items: center;
+  }
+  .sliderWrapper img {
+    order: -1;
+  }
+
+  .sliderLeftPanel h3 {
+    margin-top: 0;
+  }
+
+  .sliderLeftPanel .orderButton {
+    margin: 5% 0;
+  }
+
   .carButtonWrapper button {
-    padding: 5% 10% 5% 10%;
-    border: none;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+  }
+
+  .carButtonWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+  }
+
+  h2,
+  h3,
+  h2 > span {
+    margin: 0 5%;
+  }
+
+  /*reviews block*/
+
+  .reviewsBlock div:last-child {
+    display: none;
+  }
+
+  .reviewItem h3 {
+    margin: 0;
+  }
+
+  .reviewsBlock {
+    margin: 0px 5%;
+    min-height: 20rem;
   }
 }
 
@@ -670,6 +803,21 @@ header {
   .priceWrapper {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  /*reviews block*/
+
+  .reviewsBlock div:nth-child(2) {
+    display: none;
+  }
+
+  .reviewsBlock {
+    margin: 0px 5%;
+    min-height: 10rem;
+  }
+
+  .reviewWrapper {
+    min-height: 30rem;
   }
 }
 
@@ -792,17 +940,82 @@ header {
   }
 
   .orderButton {
-    width: 100%;
+    width: 80%;
   }
 
   /*4*/
   .carButtonWrapper button {
     padding: 5% 10% 5% 10%;
     border: none;
+    font-size: 1rem;
+  }
+
+  .rightSliderButton,
+  .leftSliderButton,
+  .sliderLeftPanel h3,
+  .sliderLeftPanel .autotruckDescription {
+    display: none;
+  }
+
+  .sliderWrapper {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .sliderLeftPanel {
+    margin-right: 0;
+    align-items: center;
+  }
+  .sliderWrapper img {
+    order: -1;
+  }
+
+  .sliderLeftPanel .orderButton {
+    margin: 5% 0;
+  }
+
+  .dots {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sliderLeftPanel ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sliderLeftPanel ul li:first-child:before {
+    content: url("../img/active_dot.png");
+  }
+
+  .sliderLeftPanel ul li:before {
+    content: url("../img/dot.png");
+  }
+  .sliderLeftPanel ul li {
+    padding-left: 5%;
+  }
+
+  /*reviews block*/
+
+  .reviewsBlock div:first-child {
+    display: none;
+  }
+
+  .reviewsBlock div:last-child {
+    display: none;
+  }
+
+  .reviewsBlock {
+    margin: 0px 5%;
+  }
+
+  .allReviews {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  .reviewWrapper {
+    min-height: 30rem;
   }
 }
-
-/* main block  */
-/* second block */
-
-/* thirdBlock */
