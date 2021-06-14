@@ -27,7 +27,7 @@ h3 {
 
 /*button*/
 
-.orderButton {
+.order-button {
   width: 15.625rem;
   font-size: 1.25rem;
   font-weight: 500;
@@ -84,30 +84,30 @@ header {
   border-bottom: 0.06rem solid currentColor;
 }
 
-.mainTitle {
+.main-title {
   margin-top: 4.3rem;
   display: flex;
   flex-direction: column;
   width: 30rem;
 }
 
-.mainTitle > h1 {
+.main-title > h1 {
   font-weight: 900;
   font-size: 4.25rem;
   line-height: 1.1;
 }
 
-.mainTitle > p {
+.main-title > p {
   padding-top: 0.8rem;
   font-weight: 600;
   font-size: 2rem;
 }
 
-.mainButtonWrapper {
+.main-button-wrapper {
   position: relative;
 }
 
-.mainButton {
+.main-button {
   display: flex;
   position: relative;
   width: 19rem;
@@ -123,7 +123,7 @@ header {
   align-items: center;
 }
 
-.shadowButton {
+.shadow-button {
   position: absolute;
   left: 0.625rem;
   top: 0.75rem;
@@ -140,7 +140,7 @@ header {
   align-items: center;
 }
 
-.phoneButtonWrapper {
+.phone-button-wrapper {
   margin-left: auto;
 }
 
@@ -171,9 +171,10 @@ header {
   transition: 0.5s;
 }
 
-.mainButton:hover {
+.main-button:hover {
   box-shadow: 0.625rem 0.75rem 0.125rem 0.25rem rgb(235, 230, 230);
   transition: 0.5s;
+  background-color: #ff772b;
 }
 
 .callButton:hover {
@@ -192,7 +193,7 @@ header {
   padding-bottom: 3.5%;
 }
 
-.itemsWrapper {
+.items-wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: -1% 18% -1% 18%;
@@ -205,37 +206,37 @@ header {
   text-shadow: 0.125rem 0.125rem #f9fc28;
 }
 
-.item .workName {
+.item .work-name {
   display: inline-block;
   font-weight: 600;
   font-size: 1.25rem;
   margin-left: 2.4rem;
 }
 
-.item .workDescription {
+.item .work-description {
   font-size: 1rem;
   margin-left: 6.25rem;
 }
 
-.itemsWrapper div {
+.items-wrapper div {
   width: 31.5rem;
   margin: 1%;
 }
 
 /* third block */
 
-.priceWrapper {
+.price-wrapper {
   display: flex;
   justify-content: space-around;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.h2_third {
+.h2-price-section {
   margin-top: 8%;
   margin-bottom: 3.5%;
 }
-.priceItem {
+.price-item {
   display: flex;
   margin: 2%;
   flex-direction: column;
@@ -246,24 +247,32 @@ header {
   border: 0.06rem solid yellow;
 }
 
-.priceItem ul li {
+.price-item ul li {
   text-align: center;
   padding-bottom: 2.25rem;
 }
 
-.priceItem h3 {
+.price-item h3 {
   padding-bottom: 3.75rem;
 }
 
-.priceItem .orderButton {
+.price-item .order-button {
   margin-bottom: 4.875rem;
 }
 
-.priceItem p {
+.price-item p {
   font-size: 1.875rem;
   font-weight: 600;
   padding-top: 2.125rem;
   padding-bottom: 3.25rem;
+}
+
+.price-item .order-button:hover {
+  color: #ffffff;
+}
+
+.price-item:hover {
+  cursor: pointer;
 }
 
 /* fourth block */
@@ -273,7 +282,7 @@ header {
   padding-bottom: 4%;
 }
 
-.carButtonWrapper {
+.car-btn-wrapper {
   display: flex;
   justify-content: space-around;
   margin-left: auto;
@@ -281,7 +290,7 @@ header {
   width: 32%;
 }
 
-.carButtonWrapper button {
+.car-btn-wrapper button {
   padding: 1.25rem 3.125rem 1.25rem 3.125rem;
   margin-left: 5%;
   margin-right: 5%;
@@ -290,81 +299,90 @@ header {
   font-size: 1.25rem;
 }
 
-.sliderWrapper {
+.slider-wrapper {
   display: flex;
   justify-content: center;
   min-height: 33.75rem;
 }
 
-.sliderWrapper img {
+.slider-wrapper img {
   align-self: center;
   max-width: 100%;
   height: auto;
 }
 
-.sliderWrapper .leftSliderButton {
+.slider-wrapper .leftSliderButton {
   margin-right: 4%;
+  width: 1rem;
+  height: 1rem;
+  border-left: 0.187rem solid black;
+  border-bottom: 0.187rem solid black;
+  transform: rotate(45deg);
+  align-self: center;
 }
 
-.sliderWrapper .rightSliderButton {
+.slider-wrapper .rightSliderButton {
   margin-left: 4%;
+  width: 1rem;
+  height: 1rem;
+  border-right: 0.187rem solid black;
+  border-bottom: 0.187rem solid black;
+  transform: rotate(-45deg);
+  align-self: center;
 }
 
-.sliderLeftPanel {
+.slider-left-panel {
   display: flex;
   flex-direction: column;
   margin-right: 6%;
 }
 
-.sliderLeftPanel h3 {
+.slider-left-panel h3 {
   margin-top: 34%;
 }
-.sliderLeftPanel ul li:before {
+.slider-left-panel ul li:before {
   content: "\2713\2003\2003";
 }
-.sliderLeftPanel ul li {
+.slider-left-panel ul li {
   padding-top: 35px;
 }
 
-.sliderWrapper .slideImg {
+.slider-wrapper .slideImg {
   align-self: center;
 }
 
-.sliderLeftPanel .orderButton {
+.slider-left-panel .order-button {
   margin-top: 15%;
 }
 
 .dots {
   display: none;
 }
+
 /* review Block */
 
-.reviewWrapper {
+.review-wrapper {
   background-color: #fed100;
   min-height: 41.5rem;
 }
 
-.reviewWrapper h2 {
+.review-wrapper h2 {
   padding-top: 5%;
   padding-bottom: 3.5%;
 }
 
-.reviewWrapper h3 {
-  padding-bottom: 0.625rem;
-}
-
-.reviewsBlock {
+.reviews-block {
   display: flex;
   justify-content: space-between;
   margin: 0 16%;
 }
 
-.reviewItem {
+.review-item {
   flex-basis: 31.25rem;
   margin: 1rem;
 }
 
-.reviewDescription {
+.review-description {
   padding-top: 1.18rem;
   padding-bottom: 1.125rem;
   line-height: 1.56rem;
@@ -378,7 +396,7 @@ header {
   margin-left: 1rem;
 }
 
-.allReviews {
+.all-reviews {
   display: block;
   width: 15.625rem;
   height: 3.125rem;
@@ -386,13 +404,18 @@ header {
   background-color: transparent;
   border: 1px solid #333333;
 }
+.author {
+  font-size: 1.5rem;
+  padding-bottom: 0.625rem;
+  font-weight: 600;
+}
 
 /* media */
 
 /* header */
 
 @media (min-width: 2000px) {
-  .itemsWrapper {
+  .items-wrapper {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
@@ -419,12 +442,12 @@ header {
 
   /* second block*/
 
-  .itemsWrapper {
+  .items-wrapper {
     margin: -1% 10% -1% 10%;
   }
 }
 @media (max-width: 1151px) {
-  .mainButton:hover {
+  .main-button:hover {
     box-shadow: none;
   }
 }
@@ -445,24 +468,24 @@ header {
     margin-right: 10rem;
   }
 
-  .mainTitle > h1 {
+  .main-title > h1 {
     text-align: center;
   }
 
-  .mainTitle > p {
+  .main-title > p {
     text-align: center;
   }
 
-  .mainButton {
+  .main-button {
     margin: 0 auto;
     margin-top: 1.156rem;
   }
 
-  .shadowButton {
+  .shadow-button {
     display: none;
   }
 
-  .mainTitle {
+  .main-title {
     width: 100%;
   }
 
@@ -473,30 +496,31 @@ header {
     display: none;
   }
 
-  .sliderWrapper {
+  .slider-wrapper {
     flex-direction: column;
     justify-content: center;
     min-height: 15rem;
   }
 
-  .sliderLeftPanel {
+  .slider-left-panel {
     margin-right: 0;
     align-items: center;
   }
-  .sliderWrapper img {
+  .slider-wrapper img {
     order: -1;
   }
 
-  .sliderLeftPanel h3 {
+  .slider-left-panel h3 {
     margin-top: 0;
   }
 
-  .sliderLeftPanel .orderButton {
+  .slider-left-panel .order-button {
     margin: 5% 0;
   }
 
   /*reviews block*/
-  .reviewsBlock {
+
+  .reviews-block {
     display: flex;
     justify-content: space-between;
     margin: 0 5%;
@@ -527,25 +551,25 @@ header {
     padding-right: 2.81rem;
   }
 
-  .mainTitle > h1 {
+  .main-title > h1 {
     text-align: center;
     font-size: 3rem;
   }
 
-  .mainTitle > p {
+  .main-title > p {
     text-align: center;
   }
 
-  .mainButton {
+  .main-button {
     margin: 0 auto;
     margin-top: 4rem;
   }
 
-  .shadowButton {
+  .shadow-button {
     display: none;
   }
 
-  .mainTitle {
+  .main-title {
     width: 100%;
     margin-top: 6rem;
   }
@@ -554,7 +578,7 @@ header {
     display: none;
   }
 
-  .phoneButtonWrapper {
+  .phone-button-wrapper {
     margin-left: 0;
   }
 
@@ -564,16 +588,18 @@ header {
   }
 
   /*second block */
-  .itemsWrapper {
+
+  .items-wrapper {
     margin: -1% 10% -1% 10%;
   }
 
   /*third block*/
-  .priceWrapper div:last-child {
+
+  .price-wrapper div:last-child {
     display: none;
   }
 
-  .priceWrapper {
+  .price-wrapper {
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -585,38 +611,43 @@ header {
     display: none;
   }
 
-  .sliderWrapper {
+  .slider-wrapper {
     flex-direction: column;
     justify-content: center;
     min-height: 15rem;
   }
 
-  .sliderLeftPanel {
+  .slider-left-panel {
     margin-right: 0;
     align-items: center;
   }
-  .sliderWrapper img {
+  .slider-wrapper img {
     order: -1;
   }
 
-  .sliderLeftPanel h3 {
+  .review-item {
     margin-top: 0;
   }
 
-  .sliderLeftPanel .orderButton {
+  .slider-left-panel .order-button {
     margin: 5% 0;
   }
 
+  .slider-left-panel h3 {
+    margin-top: 0;
+  }
+
   /*reviews block*/
-  .reviewsBlock div:last-child {
+
+  .reviews-block div:last-child {
     display: none;
   }
 
-  .reviewsBlock {
+  .reviews-block {
     margin: 0px 5%;
   }
 
-  .reviewWrapper {
+  .review-wrapper {
     min-height: 35rem;
   }
 }
@@ -651,27 +682,27 @@ header {
     padding-right: 10%;
   }
 
-  .mainTitle > h1 {
+  .main-title > h1 {
     text-align: center;
     font-size: 2rem;
   }
 
-  .mainTitle > p {
+  .main-title > p {
     text-align: center;
     font-size: 1rem;
   }
 
-  .mainButton {
+  .main-button {
     margin: 0 auto;
     margin-top: 22rem;
     width: 100%;
   }
 
-  .shadowButton {
+  .shadow-button {
     display: none;
   }
 
-  .mainTitle {
+  .main-title {
     width: 100%;
     margin-top: 1.6rem;
   }
@@ -680,7 +711,7 @@ header {
     display: none;
   }
 
-  .phoneButtonWrapper {
+  .phone-button-wrapper {
     margin-left: 0;
   }
 
@@ -698,19 +729,19 @@ header {
 
   /*second block */
 
-  .itemsWrapper {
+  .items-wrapper {
     justify-content: center;
   }
 
-  .item .workDescription {
+  .item .work-description {
     display: none;
   }
 
-  .item .workName {
+  .item .work-name {
     margin-left: 5%;
   }
 
-  .item .workName {
+  .item .work-name {
     display: inline-block;
     font-weight: 600;
     font-size: 1rem;
@@ -723,11 +754,12 @@ header {
   }
 
   /*third block*/
-  .priceWrapper div:last-child {
+
+  .price-wrapper div:last-child {
     display: none;
   }
 
-  .priceWrapper {
+  .price-wrapper {
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -739,33 +771,33 @@ header {
     display: none;
   }
 
-  .sliderWrapper {
+  .slider-wrapper {
     flex-direction: column;
     justify-content: center;
     min-height: 15rem;
   }
 
-  .sliderLeftPanel {
+  .slider-left-panel {
     margin-right: 0;
     align-items: center;
   }
-  .sliderWrapper img {
+  .slider-wrapper img {
     order: -1;
   }
 
-  .sliderLeftPanel h3 {
+  .slider-left-panel h3 {
     margin-top: 0;
   }
 
-  .sliderLeftPanel .orderButton {
+  .slider-left-panel .order-button {
     margin: 5% 0;
   }
 
-  .carButtonWrapper button {
+  .car-btn-wrapper button {
     padding: 0.25rem 1rem 0.25rem 1rem;
   }
 
-  .carButtonWrapper {
+  .car-btn-wrapper {
     display: flex;
     justify-content: space-around;
     width: 15%;
@@ -779,15 +811,15 @@ header {
 
   /*reviews block*/
 
-  .reviewsBlock div:last-child {
+  .reviews-block div:last-child {
     display: none;
   }
 
-  .reviewItem h3 {
+  .author {
     margin: 0;
   }
 
-  .reviewsBlock {
+  .reviews-block {
     margin: 0px 5%;
     min-height: 20rem;
   }
@@ -796,27 +828,27 @@ header {
 @media (max-width: 556px) and (min-width: 416px) {
   /*third block*/
 
-  .priceWrapper :nth-last-child(2) {
+  .price-wrapper :nth-last-child(2) {
     display: none;
   }
 
-  .priceWrapper {
+  .price-wrapper {
     margin-left: 10%;
     margin-right: 10%;
   }
 
   /*reviews block*/
 
-  .reviewsBlock div:nth-child(2) {
+  .reviews-block div:nth-child(2) {
     display: none;
   }
 
-  .reviewsBlock {
+  .reviews-block {
     margin: 0px 5%;
     min-height: 10rem;
   }
 
-  .reviewWrapper {
+  .review-wrapper {
     min-height: 30rem;
   }
 }
@@ -833,7 +865,7 @@ header {
     padding-top: 1.56rem;
   }
 
-  .mainTitle {
+  .main-title {
     display: flex;
     align-items: center;
     width: 15rem;
@@ -841,13 +873,13 @@ header {
     margin-top: 1.5rem;
   }
 
-  .mainTitle > h1 {
+  .main-title > h1 {
     font-size: 1.75rem;
     text-align: center;
     line-height: 2rem;
   }
 
-  .mainTitle > p {
+  .main-title > p {
     font-size: 1.12rem;
     text-align: center;
     line-height: 0.93rem;
@@ -865,7 +897,7 @@ header {
   .navigation > .phone,
   .callButton,
   .progress-bar,
-  .shadowButton {
+  .shadow-button {
     display: none;
   }
 
@@ -876,20 +908,22 @@ header {
     display: block;
   }
 
-  .mainButton {
+  .main-button {
     margin: 20.93rem auto 0 auto;
     width: 85%;
   }
 
-  .itemsWrapper {
+  .items-wrapper {
     margin: 0;
   }
+
   /*second block */
-  .item .workDescription {
+
+  .item .work-description {
     display: none;
   }
 
-  .item .workName {
+  .item .work-name {
     display: inline-block;
     font-weight: 600;
     font-size: 1rem;
@@ -897,7 +931,7 @@ header {
     width: 65%;
   }
 
-  .itemsWrapper div {
+  .items-wrapper div {
     margin-left: 15%;
     margin-top: 5%;
   }
@@ -913,20 +947,20 @@ header {
 
   /*third block*/
 
-  .priceWrapper div:last-child {
+  .price-wrapper div:last-child {
     display: none;
   }
 
-  .priceWrapper div:first-child {
+  .price-wrapper div:first-child {
     display: none;
   }
 
-  .priceWrapper {
+  .price-wrapper {
     margin-left: 10%;
     margin-right: 10%;
   }
 
-  .priceItem {
+  .price-item {
     border: none;
     width: 90%;
   }
@@ -935,16 +969,17 @@ header {
     display: none;
   }
 
-  .priceItem h3 {
+  .price-item h3 {
     padding-bottom: 2rem;
   }
 
-  .orderButton {
+  .order-button {
     width: 80%;
   }
 
-  /*4*/
-  .carButtonWrapper button {
+  /*fourth block*/
+
+  .car-btn-wrapper button {
     padding: 5% 10% 5% 10%;
     border: none;
     font-size: 1rem;
@@ -952,26 +987,26 @@ header {
 
   .rightSliderButton,
   .leftSliderButton,
-  .sliderLeftPanel h3,
-  .sliderLeftPanel .autotruckDescription {
+  .slider-left-panel h3,
+  .slider-left-panel .autotruck-description {
     display: none;
   }
 
-  .sliderWrapper {
+  .slider-wrapper {
     flex-direction: column;
     justify-content: center;
     min-height: 15rem;
   }
 
-  .sliderLeftPanel {
+  .slider-left-panel {
     margin-right: 0;
     align-items: center;
   }
-  .sliderWrapper img {
+  .slider-wrapper img {
     order: -1;
   }
 
-  .sliderLeftPanel .orderButton {
+  .slider-left-panel .order-button {
     margin: 5% 0;
   }
 
@@ -980,42 +1015,42 @@ header {
     margin: 0 auto;
   }
 
-  .sliderLeftPanel ul {
+  .slider-left-panel ul {
     display: flex;
     justify-content: space-between;
   }
 
-  .sliderLeftPanel ul li:first-child:before {
+  .slider-left-panel ul li:first-child:before {
     content: url("../img/active_dot.png");
   }
 
-  .sliderLeftPanel ul li:before {
+  .slider-left-panel ul li:before {
     content: url("../img/dot.png");
   }
-  .sliderLeftPanel ul li {
+  .slider-left-panel ul li {
     padding-left: 5%;
   }
 
   /*reviews block*/
 
-  .reviewsBlock div:first-child {
+  .reviews-block div:first-child {
     display: none;
   }
 
-  .reviewsBlock div:last-child {
+  .reviews-block div:last-child {
     display: none;
   }
 
-  .reviewsBlock {
+  .reviews-block {
     margin: 0px 5%;
   }
 
-  .allReviews {
+  .all-reviews {
     width: 80%;
     margin-bottom: 5%;
   }
 
-  .reviewWrapper {
+  .review-wrapper {
     min-height: 30rem;
   }
 }
