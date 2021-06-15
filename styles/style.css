@@ -311,7 +311,7 @@ header {
   height: auto;
 }
 
-.slider-wrapper .leftSliderButton {
+.slider-wrapper .left-slider-button {
   margin-right: 4%;
   width: 1rem;
   height: 1rem;
@@ -321,7 +321,7 @@ header {
   align-self: center;
 }
 
-.slider-wrapper .rightSliderButton {
+.slider-wrapper .right-slider-button {
   margin-left: 4%;
   width: 1rem;
   height: 1rem;
@@ -497,8 +497,8 @@ header {
 
   /*fourth block*/
 
-  .rightSliderButton,
-  .leftSliderButton {
+  .right-slider-button,
+  .left-slider-button {
     display: none;
   }
 
@@ -612,8 +612,8 @@ header {
 
   /*fourth block*/
 
-  .rightSliderButton,
-  .leftSliderButton {
+  .right-slider-button,
+  .left-slider-button {
     display: none;
   }
 
@@ -772,8 +772,8 @@ header {
 
   /*fourth block*/
 
-  .rightSliderButton,
-  .leftSliderButton {
+  .right-slider-button,
+  .left-slider-button {
     display: none;
   }
 
@@ -991,8 +991,8 @@ header {
     font-size: 1rem;
   }
 
-  .rightSliderButton,
-  .leftSliderButton,
+  .right-slider-button,
+  .left-slider-button,
   .slider-left-panel h3,
   .slider-left-panel .autotruck-description {
     display: none;
