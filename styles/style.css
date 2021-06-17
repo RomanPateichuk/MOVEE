@@ -628,17 +628,31 @@ label:before {
   width: 23.5rem;
   height: 7.875rem;
   font-size: 6rem;
+  margin-right: 3.125rem;
 }
 
 /* btn form */
 
-.btn-form {
+.f-main-button {
   display: inline-block;
+  position: absolute;
+  top: -0.625rem;
+  left: -0.625rem;
   width: 15.625rem;
   height: 3.125rem;
   background-color: #ff352b;
   color: rgb(235, 230, 230);
   font-size: 1rem;
+}
+
+
+.f-shadow-button{
+  position: relative;
+  width: 15.625rem;
+  height: 3.125rem;
+  border: 0.125rem solid #FED100;
+  margin-left: 25px;
+  z-index: 0;
 }
 
 .btn-c-wrapper {
@@ -672,7 +686,6 @@ label:before {
   opacity: 1;
 }
 
-/*&#10004;*/
 
 /* media */
 
