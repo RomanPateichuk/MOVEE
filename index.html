@@ -18,7 +18,7 @@
     <title>MOVEE</title>
   </head>
   <body>
-    <a name="main"></a>
+    <a id="main"></a>
     <header class="wrapper">
       <div class="header-content">
         <div class="navigation">
@@ -36,9 +36,7 @@
           <h1>Квартирные переезды</h1>
           <p>По Бресту и области</p>
         </div>
-        <button class="main-button">
-          Заказать
-        </button>
+        <button class="main-button">Заказать</button>
         <ul class="progress-bar">
           <li>
             <img src="img/truck.png" alt="truck" />
@@ -96,7 +94,7 @@
         </div>
       </section>
       <section>
-        <a name="price"></a>
+        <a id="price"></a>
         <h2 class="h2-price-section">
           Цены
           <br />
@@ -135,8 +133,8 @@
           </div>
         </div>
       </section>
-      <section> 
-        <a name="cars-park"></a>    
+      <section>
+        <a id="cars-park"></a>
         <h2 class="h2_carPark">
           Автопарк <br />
           <span> 10 видов автомобилей от 800 кг до 10 тонн </span>
@@ -165,7 +163,7 @@
           <span class="right-slider-button"> </span>
         </div>
       </section>
-      <a name="reviews"></a>
+      <a id="reviews"></a>
       <section class="review-wrapper">
         <h2>Отзывы</h2>
         <div class="reviews-block">
@@ -213,7 +211,7 @@
         <button class="all-reviews">Все отзывы</button>
       </section>
       <section class="form-wrapper">
-        <a name="contacts"></a>
+        <a id="contacts"></a>
         <h2 class="h2-form">Закажи переезд прямо сейчас со скидкой %</h2>
         <form>
           <p>Мы перезвоним в течении 10 секунд</p>
@@ -297,84 +295,95 @@
             </div>
           </div>
           <div class="form-footer">
-          <span class="timer">05:37:25</span>
-          <div class="form-item">   
-          <button class="form-main-button">
-                Заказать
-              </button>
-                   <div class="btn-c-wrapper">
-          <input type="checkbox" id="c-check-btn" />
-            <label class="b-label" for="c-check-btn"
-              >Даю согласие на обработку данных</label
-            >
-          </div>
-        </div> 
-        </div>
-        </div>
+            <span class="timer">05:37:25</span>
+            <div class="form-item">
+              <button class="form-main-button">Заказать</button>
+              <div class="btn-c-wrapper">
+                <input type="checkbox" id="c-check-btn" />
+                <label class="b-label" for="c-check-btn"
+                  >Даю согласие на обработку данных</label
+                >
+              </div>
+            </div>
           </div>
         </form>
       </section>
-      <section class='map-block'>
-         <iframe class="map" iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.081269409712!2d23.714826315941846!3d52.11465007394185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721094e8a4f69cb%3A0x1d2497ebd95e8d69!2z0YPQuy4g0KDQsNC00YPQttC90LDRjyAzNSwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1623926675131!5m2!1sru!2sby"  allowfullscreen="" loading="lazy">
-                  </iframe> 
-                  <div class="m-block">
-                    <h2 class='m-h2'>MOVEE</h2>
-                  <ul>
-                    <li>Брест</li>
-                    <li>8 (039)-999-12-13
-                    </li>
-                    <li>hello@movee.ru</li>
-                  </ul> 
-                  <div class="icon-wrapper">
-                    <a href="https://www.youtube.com/"  target="_blank"><img src="/img/icon_play.png" alt="icon_play" ></a>
-                    <a href="https://vk.com/" target="_blank"><img src="/img/icon_vk.png" alt="icon_vk"></a>
-                    <a href="https://web.facebook.com/" target="_blank"><img src="/img/icon_facebook.png" alt="icon_facebook"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon_instag.png" alt="icon_insta"></a>
-                  </div>
-                  </div>
+      <section class="map-block">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2450.081269409712!2d23.714826315941846!3d52.11465007394185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721094e8a4f69cb%3A0x1d2497ebd95e8d69!2z0YPQuy4g0KDQsNC00YPQttC90LDRjyAzNSwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1623926675131!5m2!1sru!2sby"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+        <div class="m-block">
+          <h2 class="m-h2">MOVEE</h2>
+          <ul>
+            <li>Брест</li>
+            <li>8 (039)-999-12-13</li>
+            <li>hello@movee.ru</li>
+          </ul>
+          <div class="icon-wrapper">
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img src="img/icon_play.png" alt="icon_play"
+            /></a>
+            <a href="https://vk.com/" target="_blank"
+              ><img src="img/icon_vk.png" alt="icon_vk"
+            /></a>
+            <a href="https://web.facebook.com/" target="_blank"
+              ><img src="img/icon_facebook.png" alt="icon_facebook"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="img/icon_instag.png" alt="icon_insta"
+            /></a>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="footer-wrapper">
           <div class="footer-item movee-item">
-            <h2 class='f-h2'>MOVEE</h2>
-            <p>
-              Политика 
-              конфиденциальнности
-            </p>
-            <p>
-              Соглашение на обработку персональных данных
-            </p>
+            <h2 class="f-h2">MOVEE</h2>
+            <p>Политика конфиденциальнности</p>
+            <p>Соглашение на обработку персональных данных</p>
           </div>
-          
-            <ul class="footer-item">            
-              <li><a href="#main">Главная</a></li>
-              <li><a href="#price">Цены</a></li>
-              <li><a href="#cars-park">Автопарк</a></li>
-              <li><a href="#reviews">Отзывы</a></li>
-              <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        
+
+          <ul class="footer-item">
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#cars-park">Автопарк</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+
           <div class="footer-item">
-            <div class='footer-icon-wrapper'>
-              <a href="https://www.youtube.com/"  target="_blank"><img src="/img/icon_play.png" alt="icon_play" ></a>
-              <a href="https://vk.com/" target="_blank"><img src="/img/icon_vk.png" alt="icon_vk"></a>
-              <a href="https://web.facebook.com/" target="_blank"><img src="/img/icon_facebook.png" alt="icon_facebook"></a>
-              <a href="https://www.instagram.com/" target="_blank"><img src="/img/icon_instag.png" alt="icon_insta"></a>
+            <div class="footer-icon-wrapper">
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img src="img/icon_play.png" alt="icon_play"
+              /></a>
+              <a href="https://vk.com/" target="_blank"
+                ><img src="img/icon_vk.png" alt="icon_vk"
+              /></a>
+              <a href="https://web.facebook.com/" target="_blank"
+                ><img src="img/icon_facebook.png" alt="icon_facebook"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="img/icon_instag.png" alt="icon_insta"
+              /></a>
             </div>
-            <p class='footer-prg'>hello@movee.ru</p>
-            <p class='footer-prg'> Поделиться в 
-              соц. сетях</p>
-              <div class="footer-img-wrapper">
-              <a  href="https://vk.com/" target="_blank"><img src="/img/icon_big_vk.png" alt="icon_vk"></a>
-              <a  href="https://web.facebook.com/" target="_blank"><img src="/img/icon_big_facebook.png" alt="icon_facebook"></a>
+            <p class="footer-prg">hello@movee.ru</p>
+            <p class="footer-prg">Поделиться в соц. сетях</p>
+            <div class="footer-img-wrapper">
+              <a href="https://vk.com/" target="_blank"
+                ><img src="img/icon_big_vk.png" alt="icon_vk"
+              /></a>
+              <a href="https://web.facebook.com/" target="_blank"
+                ><img src="img/icon_big_facebook.png" alt="icon_facebook"
+              /></a>
             </div>
-            </div>
+          </div>
           <div class="footer-item-phone">
-            <button class='footer-button'>
-              Обратный звонок
-            </button>
-            <p class='footer-phone'>8 (029)-999-12-13
-            </p>
+            <button class="footer-button">Обратный звонок</button>
+            <p class="footer-phone">8 (029)-999-12-13</p>
           </div>
         </div>
       </footer>
