@@ -104,34 +104,32 @@ header {
   font-size: 2rem;
 }
 
-.main-button-wrapper {
-  position: relative;
-}
-
 .main-button {
-  display: flex;
-  position: relative;
+  display: flex; 
+  position: absolute;
   width: 19rem;
   height: 4rem;
   background-color: #ff0000;
   font-weight: 600;
-  margin-top: 3rem;
   font-size: 1.5rem;
   border: 0rem;
-  z-index: 2;
+  z-index: 10;
   color: #f2f2f2;
   justify-content: center;
   align-items: center;
+  top: -0.8125rem;
+  left: -0.5625rem; 
 }
 
 .shadow-button {
-  position: absolute;
+  position: relative;
+  margin-top: 3rem;
   left: 0.625rem;
   top: 0.75rem;
   width: 19rem;
   height: 3.75rem;
   border: 0.125rem solid #f2f2f2;
-  z-index: 1;
+  z-index: 0;
 }
 
 .progress-bar {
@@ -173,10 +171,11 @@ header {
 }
 
 .main-button:hover {
-  box-shadow: 0.625rem 0.75rem 0.125rem 0.25rem rgb(235, 230, 230);
+  box-shadow: 8px 9px 2px 1px rgb(235, 230, 230);
   transition: 0.5s;
   background-color: #ff772b;
 }
+
 
 .callButton:hover {
   box-shadow: 0.0625rem 0.0625rem 0rem 1.25rem rgba(61, 155, 233);
@@ -714,6 +713,7 @@ label:before {
 @media (max-width: 1151px) {
   .main-button:hover {
     box-shadow: none;
+    background-color: #ff0000;
   }
 }
 @media (max-width: 1151px) and (min-width: 980px) {
@@ -741,15 +741,14 @@ label:before {
     text-align: center;
   }
 
-  .main-button {
-    margin: 0 auto;
-    margin-top: 1.156rem;
-  }
-
   .shadow-button {
-    display: none;
+      margin: 2.375rem auto 0 auto;
   }
 
+  .progress-bar {
+    padding-top: 0.5rem;  
+}
+  
   .main-title {
     width: 100%;
   }
@@ -825,14 +824,9 @@ label:before {
     text-align: center;
   }
 
-  .main-button {
-    margin: 0 auto;
-    margin-top: 4rem;
-  }
-
-  .shadow-button {
-    display: none;
-  }
+   .shadow-button {
+    margin: 2.375rem auto 0 auto;
+}
 
   .main-title {
     width: 100%;
@@ -957,15 +951,9 @@ label:before {
     font-size: 1rem;
   }
 
-  .main-button {
-    margin: 0 auto;
-    margin-top: 22rem;
-    width: 100%;
-  }
-
   .shadow-button {
-    display: none;
-  }
+    margin: 23.2rem auto 0 auto;
+}
 
   .main-title {
     width: 100%;
@@ -1157,12 +1145,11 @@ label:before {
   .header-content {
     margin: 0;
   }
-
   .navigation > .header-nav,
   .navigation > .phone,
   .callButton,
-  .progress-bar,
-  .shadow-button {
+  .progress-bar
+   { 
     display: none;
   }
 
@@ -1173,10 +1160,10 @@ label:before {
     display: block;
   }
 
-  .main-button {
-    margin: 20.93rem auto 0 auto;
-    width: 85%;
-  }
+  .shadow-button {
+    margin: 22rem auto 0 auto;
+    border: none;
+}
 
   .items-wrapper {
     margin: 0;
