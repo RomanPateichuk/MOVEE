@@ -104,3 +104,24 @@ for (let link of links) {
     });
   });
 }
+
+const menu = document.querySelector(".menu");
+const header_nav = document.querySelector(".header-nav");
+
+menu.addEventListener("click", (event) => {
+  let header_nav_display_style = window
+    .getComputedStyle(header_nav)
+    .getPropertyValue("display");
+  if (header_nav_display_style == "flex") {
+    header_nav.style.display = "none";
+  } else {
+    header_nav.style.display = "flex";
+  }
+  header_nav.addEventListener("click", (event) => {
+    header_nav.style.display = "none";
+  });
+});
+
+// document.addEventListener("click", () => {
+//   header_nav.style.display = "none";
+// });

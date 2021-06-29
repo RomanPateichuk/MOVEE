@@ -1005,8 +1005,26 @@ footer {
 
 @media (max-width: 981px) and (min-width: 710px) {
   .navigation .header-nav {
-    font-size: 1.4rem;
     display: none;
+    flex-direction: column;
+    font-size: 2rem;
+    position: absolute;
+    left: 68%;
+    top: 15%;
+    flex: 0 0 auto;
+    background-color: #ccbbbb;
+    opacity: 0.9;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .navigation .header-nav > li {
+    padding: 5%;
+  }
+
+  .navigation .header-nav > li a {
+    color: white;
+    font-weight: 700;
   }
 
   .menu {
@@ -1139,8 +1157,26 @@ footer {
 
 @media (max-width: 711px) and (min-width: 415px) {
   .navigation .header-nav {
-    font-size: 1.4rem;
     display: none;
+    flex-direction: column;
+    font-size: 2rem;
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    flex: 0 0 auto;
+    background-color: #ccbbbb;
+    opacity: 0.9;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .navigation .header-nav > li {
+    padding: 5%;
+  }
+
+  .navigation .header-nav > li a {
+    color: white;
+    font-weight: 700;
   }
 
   .navigation p {
@@ -1365,6 +1401,29 @@ footer {
 }
 
 @media (max-width: 417px) {
+  .navigation .header-nav {
+    display: none;
+    flex-direction: column;
+    font-size: 1.7rem;
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    flex: 0 0 auto;
+    background-color: #ccbbbb;
+    opacity: 0.9;
+    align-items: center;
+    padding: 3%;
+  }
+
+  .navigation .header-nav > li {
+    padding: 5%;
+  }
+
+  .navigation .header-nav > li a {
+    color: white;
+    font-weight: 700;
+  }
+
   .wrapper {
     min-height: 37.5rem;
   }
