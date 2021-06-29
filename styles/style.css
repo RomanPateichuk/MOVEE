@@ -353,7 +353,10 @@ header {
 }
 
 .slider .slider__item:nth-child(2),
-.slider .slider__item:nth-child(3),
+.slider .slider__item:nth-child(3) {
+  display: none;
+}
+
 .dots {
   display: none;
 }
@@ -396,7 +399,7 @@ header {
   display: block;
   width: 15.625rem;
   height: 3.125rem;
-  margin: 3% auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: transparent;
   border: 0.0625rem solid #333333;
 }

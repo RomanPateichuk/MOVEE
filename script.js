@@ -1,3 +1,4 @@
+"use strict";
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slider__item");
 let left_btn = document.querySelector(".left-slider-button");
@@ -91,3 +92,15 @@ let timer = setInterval(() => {
     clearInterval(timer);
   }
 }, 1000);
+
+const links = document.querySelectorAll('a[href*="#"]');
+for (let link of links) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const link_id = link.getAttribute("href");
+    document.querySelector("" + link_id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
