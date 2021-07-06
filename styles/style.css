@@ -415,6 +415,10 @@ header {
   font-weight: 600;
 }
 
+.review-description__text {
+  display: none;
+}
+
 /* form block */
 .h2-form {
   margin: 7rem 5% 0 5%;
@@ -446,6 +450,10 @@ form .input-text {
 
 form .input-text:invalid {
   border: 2px solid #ff352b;
+}
+
+form .input-text:valid {
+  border: 2px solid #2bff2b;
 }
 
 form .input-text,

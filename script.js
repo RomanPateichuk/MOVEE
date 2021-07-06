@@ -122,6 +122,51 @@ menu.addEventListener("click", (event) => {
   });
 });
 
-// document.addEventListener("click", () => {
-//   header_nav.style.display = "none";
-// });
+const btn_read_more = document.querySelectorAll(".read-more");
+const review_dots = document.querySelectorAll(".review-description__dots");
+const text_more = document.querySelectorAll(".review-description__text");
+const review_block = document.querySelector(".review-wrapper");
+
+review_block.addEventListener("click", (event) => {
+  for (let text of text_more) {
+    text.style.display = "none";
+  }
+
+  for (let dots of review_dots) {
+    dots.style.display = "inline";
+  }
+
+  for (let btn of btn_read_more) {
+    btn.style.display = "inline";
+  }
+
+  if (event.target.getAttribute("id") == "review1") {
+    review_dots[0].style.display = "none";
+    btn_read_more[0].style.display = "none";
+    text_more[0].style.display = "inline";
+  } else if (event.target.getAttribute("id") == "review2") {
+    review_dots[1].style.display = "none";
+    btn_read_more[1].style.display = "none";
+    text_more[1].style.display = "inline";
+  } else if (event.target.getAttribute("id") == "review3") {
+    review_dots[2].style.display = "none";
+    btn_read_more[2].style.display = "none";
+    text_more[2].style.display = "inline";
+  }
+});
+
+const list_city = document.querySelector(".list-city");
+const input_add_city = document.querySelector(".input-text-add-city");
+const main_form = document.getElementById("main_form");
+
+main_form.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
+
+input_add_city.addEventListener("keydown", (event) => {
+  if (event.keyCode === 13) {
+    let newOption = new Option(input_add_city.value);
+    list_city.append(newOption);
+    newOption.selected = true;
+  }
+});
