@@ -1,0 +1,258 @@
+.h2_carPark {
+  padding: 4% 0 4% 0;
+}
+
+.car-btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 0 auto;
+  width: 32%;
+}
+
+.car-btn-wrapper button {
+  padding: 1.25rem 3.125rem 1.25rem 3.125rem;
+  margin: 0 5% 0 5%;
+  background-color: #ffffff;
+  border: 0.0625rem solid #ebebeb;
+  font-size: 1.25rem;
+}
+
+.car-btn-wrapper button:hover {
+  border: 0.0625rem solid #fed100;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: center;
+  min-height: 33.75rem;
+  order: 2;
+}
+
+.slider__item img {
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.left-slider-button {
+  margin: 0 8% 0 0;
+  width: 1rem;
+  height: 1rem;
+  border-left: 0.187rem solid black;
+  border-bottom: 0.187rem solid black;
+  transform: rotate(45deg);
+  align-self: center;
+  order: 1;
+}
+
+.right-slider-button {
+  margin: 0 0 0 8%;
+  width: 1rem;
+  height: 1rem;
+  border-right: 0.187rem solid black;
+  border-bottom: 0.187rem solid black;
+  transform: rotate(-45deg);
+  align-self: center;
+  order: 3;
+}
+
+.slider-left-panel {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6% 0 0;
+}
+
+.slider-left-panel h3 {
+  margin: 34% 0 0 0;
+}
+.slider-left-panel ul li:before {
+  content: "\2713\2003\2003";
+}
+.slider-left-panel ul li {
+  padding: 2.1875rem 0 0 0;
+}
+
+.slider__item .slideImg {
+  align-self: center;
+}
+
+.slider-left-panel .order-button {
+  margin: 15% 0 0 0;
+}
+
+.slider .slider__item:nth-child(2),
+.slider .slider__item:nth-child(3) {
+  display: none;
+}
+
+.dots {
+  display: none;
+}
+
+@media (max-width: 1151px) and (min-width: 980px) {
+  .right-slider-button,
+  .left-slider-button {
+    display: none;
+  }
+
+  .slider__item {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .slider-left-panel {
+    margin: 0;
+    align-items: center;
+  }
+  .slider__item img {
+    order: -1;
+  }
+
+  .slider-left-panel h3 {
+    margin: 0;
+  }
+
+  .slider-left-panel .order-button {
+    margin: 5% 0;
+  }
+}
+
+@media (max-width: 981px) and (min-width: 710px) {
+  .right-slider-button,
+  .left-slider-button {
+    display: none;
+  }
+
+  .slider__item {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .slider-left-panel {
+    margin: 0;
+    align-items: center;
+  }
+  .slider__item img {
+    order: -1;
+  }
+
+  .review-item {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  .slider-left-panel .order-button {
+    margin: 5% 0;
+  }
+
+  .slider-left-panel h3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 711px) and (min-width: 415px) {
+  /*fourth block*/
+  .right-slider-button,
+  .left-slider-button {
+    display: none;
+  }
+
+  .slider__item {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .slider-left-panel {
+    margin: 0;
+    align-items: center;
+  }
+  .slider__item img {
+    order: -1;
+  }
+
+  .slider-left-panel h3 {
+    margin: 0;
+  }
+
+  .slider-left-panel .order-button {
+    margin: 5% 0;
+  }
+
+  .car-btn-wrapper button {
+    padding: 0.25rem 1rem 0.25rem 1rem;
+  }
+
+  .car-btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+  }
+
+  h2,
+  h3,
+  h2 > span {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 417px) {
+  /*fourth block*/
+  .car-btn-wrapper button {
+    padding: 5% 10% 5% 10%;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .right-slider-button,
+  .left-slider-button,
+  .slider-left-panel h3,
+  .slider-left-panel .autotruck-description {
+    display: none;
+  }
+
+  .slider__item {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15rem;
+  }
+
+  .slider-left-panel {
+    margin: 0;
+    align-items: center;
+  }
+  .slider__item img {
+    order: -1;
+  }
+
+  .slider-left-panel .order-button {
+    margin: 5% 0;
+  }
+
+  .dots {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* .slider-left-panel ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .slider-left-panel ul li:first-child:before {
+      content: url("../img/active_dot.png");
+    }
+  
+    .slider-left-panel ul li:before {
+      content: url("../img/dot.png");
+    }
+    .slider-left-panel ul li {
+      padding-left: 5%;
+    } */
+}

@@ -1,0 +1,113 @@
+.price-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 15% 0 15%;
+}
+
+.h2-price-section {
+  margin: 8% 1% 3.5% 1%;
+}
+
+.price-item {
+  display: flex;
+  margin: 2%;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 26.31rem;
+  padding: 3rem 0 0 0;
+  border: 0.06rem solid yellow;
+}
+
+.price-item ul li {
+  text-align: center;
+  padding: 0 0 2.25rem 0;
+}
+
+.price-item h3 {
+  padding: 0 0 3.75rem 0;
+}
+
+.price-item .order-button {
+  margin: 0 0 4.875rem 0;
+}
+
+.price-item p {
+  font-size: 1.875rem;
+  font-weight: 600;
+  padding: 2.125rem 0 3.25rem 0;
+}
+
+.price-item .order-button:hover {
+  color: #ffffff;
+}
+
+.price-item:hover {
+  box-shadow: 0 0.75rem 1.5625rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 981px) and (min-width: 710px) {
+  .price-wrapper div:last-child {
+    display: none;
+  }
+
+  .price-wrapper {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 711px) and (min-width: 415px) {
+  .price-wrapper div:last-child {
+    display: none;
+  }
+
+  .price-wrapper {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 556px) and (min-width: 416px) {
+  .price-wrapper :nth-last-child(2) {
+    display: none;
+  }
+
+  .price-wrapper {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 417px) {
+  .price-wrapper div:last-child {
+    display: none;
+  }
+
+  .price-wrapper div:first-child {
+    display: none;
+  }
+
+  .price-wrapper {
+    margin: 0 10% 0 10%;
+  }
+
+  .price-item {
+    border: none;
+    width: 90%;
+    padding: 2rem 0 0 0;
+  }
+
+  h2 span {
+    display: none;
+  }
+
+  .price-item h3 {
+    padding: 0 0 2rem 0;
+  }
+
+  .order-button {
+    width: 80%;
+  }
+
+  .price-item .order-button {
+    margin: 0px 0px 2.875rem;
+  }
+}

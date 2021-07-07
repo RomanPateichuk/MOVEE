@@ -1,0 +1,114 @@
+.h2_howWork {
+  padding: 5% 0 3.5% 0;
+}
+
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1% 18% -1% 18%;
+  justify-content: space-around;
+}
+
+.number {
+  display: inline-block;
+  font-size: 3.125rem;
+  text-shadow: 0.125rem 0.125rem #f9fc28;
+}
+
+.item .work-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 0 0 2.4rem;
+}
+
+.item .work-description {
+  font-size: 1rem;
+  margin: 0 0 0 6.25rem;
+}
+
+.items-wrapper div {
+  width: 31.5rem;
+  margin: 1%;
+}
+
+@media (min-width: 2000px) {
+  .items-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1690px) and (min-width: 1150px) {
+  .items-wrapper {
+    margin: -1% 10% -1% 10%;
+  }
+}
+
+@media (max-width: 981px) and (min-width: 710px) {
+  .items-wrapper {
+    margin: -1% 10% -1% 10%;
+  }
+}
+
+@media (max-width: 711px) and (min-width: 415px) {
+  .items-wrapper {
+    justify-content: center;
+  }
+
+  .item .work-description {
+    display: none;
+  }
+
+  .item .work-name {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 0 5%;
+    width: 65%;
+  }
+  .h2_howWork {
+    padding: 10% 0 5% 0;
+  }
+
+  .price-wrapper div:last-child {
+    display: none;
+  }
+
+  .price-wrapper {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 417px) {
+  .item .work-description {
+    display: none;
+  }
+
+  .items-wrapper {
+    margin: 0;
+  }
+
+  .item .work-name {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+    width: 65%;
+  }
+
+  .items-wrapper div {
+    margin: 5% 0 0 15%;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .h2_howWork {
+    padding: 10% 2% 5% 2%;
+  }
+}

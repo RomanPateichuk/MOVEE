@@ -114,11 +114,14 @@ menu.addEventListener("click", (event) => {
     .getPropertyValue("display");
   if (header_nav_display_style == "flex") {
     header_nav.style.display = "none";
+    menu.classList.remove("active");
   } else {
     header_nav.style.display = "flex";
+    menu.classList.add("active");
   }
   header_nav.addEventListener("click", (event) => {
     header_nav.style.display = "none";
+    menu.classList.remove("active");
   });
 });
 
