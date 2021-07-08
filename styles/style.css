@@ -1,11 +1,11 @@
-@import url("/styles/header.css");
-@import url("/styles/how-it-works.css");
-@import url("/styles/price.css");
-@import url("/styles/slider.css");
-@import url("/styles/reviews.css");
-@import url("/styles/form.css");
-@import url("/styles/map.css");
-@import url("/styles/footer.css");
+@import url("styles/header.css");
+@import url("styles/how-it-works.css");
+@import url("styles/price.css");
+@import url("styles/slider.css");
+@import url("styles/reviews.css");
+@import url("styles/form.css");
+@import url("styles/map.css");
+@import url("styles/footer.css");
 
 body {
   font-family: "Montserrat", Arial, sans-serif;
