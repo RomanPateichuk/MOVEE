@@ -24,13 +24,13 @@
         <div class="navigation">
           <p>MOVEE</p>
           <ul class="header-nav">
-            <li><a href="">Цены</a></li>
-            <li><a href="">Автопарк</a></li>
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#cars-park">Автопарк</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
           <a class="phone" href="tel:8(029)9991213">8(029)-999-12-13</a>
-          <img class="menu" src="img/menuBurger.png" alt="menu" />
+          <div class="menu"><span></span></div>
         </div>
         <div class="main-title">
           <h1>Квартирные переезды</h1>
@@ -144,22 +144,56 @@
           <button>Каблуки</button>
           <button>Грузовики</button>
         </div>
-        <div class="slider-wrapper">
-          <span class="left-slider-button"></span>
-          <div class="slider-left-panel">
-            <h3>Газель 3 метра</h3>
-            <ul class="autotruck-description">
-              <li>Ширина 2 м</li>
-              <li>Высота 2 м</li>
-              <li>Объем 16 м<sup>3</sup></li>
-              <li>Грузоподьемность 1.5 т</li>
-            </ul>
-            <div class="dots">
-              <p>Газель 3 метра / 1,5 тонны</p>
+        <div class="slider">
+          <div class="slider__item">
+            <div class="slider-left-panel">
+              <h3>Газель 3 метра</h3>
+              <ul class="autotruck-description">
+                <li>Ширина 2 м</li>
+                <li>Высота 2 м</li>
+                <li>Объем 16 м<sup>3</sup></li>
+                <li>Грузоподьемность 1.5 т</li>
+              </ul>
+              <div class="dots">
+                <p>Газель 3 метра / 1,5 тонны</p>
+              </div>
+              <button class="order-button">Заказать</button>
             </div>
-            <button class="order-button">Заказать</button>
+            <img src="img/bus.png" alt="slide" class="slideImg" />
           </div>
-          <img src="img/slide_img.png" alt="slide" class="slideImg" />
+          <div class="slider__item">
+            <div class="slider-left-panel">
+              <h3>Каблук 2 метра</h3>
+              <ul class="autotruck-description">
+                <li>Ширина 1.8 м</li>
+                <li>Высота 1.2 м</li>
+                <li>Объем 8 м<sup>3</sup></li>
+                <li>Грузоподьемность 0.8 т</li>
+              </ul>
+              <div class="dots">
+                <p>Каблук 2 метра / 0,8 тонны</p>
+              </div>
+              <button class="order-button">Заказать</button>
+            </div>
+            <img src="img/car.png" alt="slide" class="slideImg" />
+          </div>
+          <div class="slider__item">
+            <div class="slider-left-panel">
+              <h3>Грузовик 3 метра</h3>
+              <ul class="autotruck-description">
+                <li>Ширина 3 м</li>
+                <li>Высота 3 м</li>
+                <li>Объем 20 м<sup>3</sup></li>
+                <li>Грузоподьемность 2 т</li>
+              </ul>
+              <div class="dots">
+                <p>Грузовик 3 метра / 2 тонны</p>
+              </div>
+              <button class="order-button">Заказать</button>
+            </div>
+            <img src="img/truck162351.png" alt="slide" class="slideImg" />
+          </div>
+          <span class="left-slider-button"></span>
           <span class="right-slider-button"> </span>
         </div>
       </section>
@@ -175,11 +209,19 @@
               положительные впечатления. Хотелось отметить замечательного
               водителя газели Алексея. Были трудности с заездом во двор, он
               проявил себя как компетентный и профессиональный сотрудник, за что
-              ему огромное...
+              ему огромное<span class="review-description__dots">...</span>
+              <span class="review-description__text"
+                >ты основываешься на книжном первоисточнике, воспринимать
+                информацию в фильме становится гораздо легче и проще. В данной
+                ситуации фильм сам по себе выглядит самодостаточным и
+                интересным. Хоть я и не читал роман, фильм для меня однозначно
+                хорош. Почему? Из-за идеи. Она неплохо проработана, современна,
+                где-то даже зловеще саркастична для нашего 'смартфонного'
+                общества потребления.</span
+              >
             </p>
-            <span class="read-more">читать полностью</span>
+            <span class="read-more" id="review1">читать полностью</span>
           </div>
-
           <div class="review-item">
             <p class="author">Светлана Васильевна</p>
             <div class="stock-rewiew">
@@ -190,9 +232,18 @@
               несмотря на то, что к нам опоздали на 1,5 часа. Морально были к
               этому готовы ( в прошлый переезд в другой фирме тоже опоздали на
               час). Водитель заранее позвонил, предупредил, что задерживается.
-              Когда....
+              Безусловно, когда<span class="review-description__dots">...</span>
+              <span class="review-description__text"
+                >ты основываешься на книжном первоисточнике, воспринимать
+                информацию в фильме становится гораздо легче и проще. В данной
+                ситуации фильм сам по себе выглядит самодостаточным и
+                интересным. Хоть я и не читал роман, фильм для меня однозначно
+                хорош. Почему? Из-за идеи. Она неплохо проработана, современна,
+                где-то даже зловеще саркастична для нашего 'смартфонного'
+                общества потребления.</span
+              >
             </p>
-            <span class="read-more">читать полностью</span>
+            <span class="read-more" id="review2">читать полностью</span>
           </div>
           <div class="review-item">
             <p class="author">Ольга Петрова</p>
@@ -203,9 +254,19 @@
               Могу на 100% порекомендовать компанию MOVEE и отметить, что цены
               фиксированы, что упрощает расчет. Безо всяких заморочек, в отличии
               от их конкурентов. Упаковали все качественно и быстро. Все вещи
-              приехали в сохранности. Особая благодарность Александру за его...
+              приехали в сохранности. Особая благодарность Александру за
+              его<span class="review-description__dots">...</span>
+              <span class="review-description__text"
+                >ты основываешься на книжном первоисточнике, воспринимать
+                информацию в фильме становится гораздо легче и проще. В данной
+                ситуации фильм сам по себе выглядит самодостаточным и
+                интересным. Хоть я и не читал роман, фильм для меня однозначно
+                хорош. Почему? Из-за идеи. Она неплохо проработана, современна,
+                где-то даже зловеще саркастична для нашего 'смартфонного'
+                общества потребления.</span
+              >
             </p>
-            <span class="read-more">читать полностью</span>
+            <span class="read-more" id="review3">читать полностью</span>
           </div>
         </div>
         <button class="all-reviews">Все отзывы</button>
@@ -213,25 +274,37 @@
       <section class="form-wrapper">
         <a id="contacts"></a>
         <h2 class="h2-form">Закажи переезд прямо сейчас со скидкой %</h2>
-        <form>
+        <form id="main_form">
           <p>Мы перезвоним в течении 10 секунд</p>
           <div class="name-phone-inputs">
-            <input class="input-text" type="text" placeholder="Ваше имя" />
-            <input class="input-text" type="text" placeholder="Телефон" />
+            <input
+              class="input-text"
+              type="text"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              class="input-text"
+              type="text"
+              placeholder="Телефон"
+              required
+            />
           </div>
           <div class="main-form">
             <div class="input-area-wrapper">
               <h3 class="h3-form">Укажите область</h3>
-              <select class="list-area">
-                <option disabled selected hidden>Например: Минская</option>
-                <option>Минская</option>
-                <option>Брестская</option>
-                <option>Гродненская</option>
-                <option>Витебкая</option>
-                <option>Могилевская</option>
-                <option>Гомельская</option>
-                <option>Гомельская</option>
-              </select>
+              <div class="select-wrapper">
+                <select class="list-area">
+                  <option disabled selected hidden>Например: Минская</option>
+                  <option>Минская</option>
+                  <option>Брестская</option>
+                  <option>Гродненская</option>
+                  <option>Витебкая</option>
+                  <option>Могилевская</option>
+                  <option>Гомельская</option>
+                  <option>Гомельская</option>
+                </select>
+              </div>
             </div>
             <div class="input-city-wrapper">
               <h3 class="h3-form">Укажите город</h3>
@@ -264,8 +337,11 @@
                 <label class="r-label" for="r-check3">Банковской картой</label>
               </div>
             </div>
-            <h3 class="h3-form">Дополнительные услуги</h3>
-            <div class="checkbox-services-wrapper">
+            <h3 class="h3-form">
+              Дополнительные услуги
+              <span id="visible-services"></span>
+            </h3>
+            <div class="checkbox-services-wrapper" id="services">
               <div class="c-wrapper">
                 <input type="checkbox" id="c-check1" />
                 <label class="c-label" for="c-check1">Вызов замерщика</label>
@@ -293,9 +369,9 @@
             </div>
           </div>
           <div class="form-footer">
-            <span class="timer">05:37:25</span>
+            <span class="timer" id="countdown_timer">05:37:25</span>
             <div class="form-item">
-              <button class="form-main-button">Заказать</button>
+              <button class="form-main-button" id="form_btn">Заказать</button>
               <div class="btn-c-wrapper">
                 <input type="checkbox" id="c-check-btn" />
                 <label class="b-label" for="c-check-btn"
@@ -344,7 +420,6 @@
             <p>Политика конфиденциальнности</p>
             <p>Соглашение на обработку персональных данных</p>
           </div>
-
           <ul class="footer-item">
             <li><a href="#main">Главная</a></li>
             <li><a href="#price">Цены</a></li>
@@ -352,7 +427,6 @@
             <li><a href="#reviews">Отзывы</a></li>
             <li><a href="#contacts">Контакты</a></li>
           </ul>
-
           <div class="footer-item">
             <div class="footer-icon-wrapper">
               <a href="https://www.youtube.com/" target="_blank"
@@ -371,10 +445,15 @@
             <p class="footer-prg">hello@movee.ru</p>
             <p class="footer-prg">Поделиться в соц. сетях</p>
             <div class="footer-img-wrapper">
-              <a href="https://vk.com/" target="_blank"
-                ><img src="img/icon_big_vk.png" alt="icon_vk"
+              <a
+                href="http://vk.com/share.php?url=https://romanpateichuk.github.io/MOVEE/&title=Квартирные+переезды&image=https://romanpateichuk.github.io/MOVEE/img/express.png"
+                target="_blank"
+              >
+                <img src="img/icon_big_vk.png" alt="icon_vk"
               /></a>
-              <a href="https://web.facebook.com/" target="_blank"
+              <a
+                href="http://www.facebook.com/sharer.php?u=https://romanpateichuk.github.io/MOVEE/&t=Квартирные+переезды"
+                target="_blank"
                 ><img src="img/icon_big_facebook.png" alt="icon_facebook"
               /></a>
             </div>
@@ -386,5 +465,6 @@
         </div>
       </footer>
     </main>
+    <script async src="scripts/script.js"></script>
   </body>
 </html>

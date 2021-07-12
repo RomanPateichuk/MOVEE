@@ -1,0 +1,134 @@
+.review-wrapper {
+  background-color: #fed100;
+  min-height: 41.5rem;
+}
+
+.review-wrapper h2 {
+  padding: 5% 0 3.5% 0;
+}
+
+.reviews-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16%;
+}
+
+.review-item {
+  flex-basis: 31.25rem;
+  margin: 1rem;
+}
+
+.review-description {
+  padding: 1.18rem 0 1.125rem 0;
+  line-height: 1.56rem;
+}
+
+.stars {
+  display: inline-block;
+  background-image: url(../img/star.png);
+  width: 5rem;
+  padding: 0.93rem 0 0 0;
+  margin: 0 0 0 1rem;
+}
+
+.all-reviews {
+  display: block;
+  width: 15.625rem;
+  height: 3.125rem;
+  margin: 0 auto 0 auto;
+  background-color: transparent;
+  border: 0.0625rem solid #333333;
+}
+
+.all-reviews:hover {
+  background-color: #ffffff;
+  border: none;
+  font-weight: 700;
+}
+.author {
+  font-size: 1.5rem;
+  padding: 0 0 0.625rem 0;
+  font-weight: 600;
+}
+
+.review-description__text {
+  display: none;
+}
+
+@media (max-width: 1151px) and (min-width: 980px) {
+  .reviews-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 981px) and (min-width: 710px) {
+  .reviews-block div:last-child {
+    display: none;
+  }
+
+  .reviews-block {
+    margin: 0 5%;
+  }
+
+  .review-wrapper {
+    min-height: 35rem;
+  }
+}
+
+@media (max-width: 711px) and (min-width: 415px) {
+  .reviews-block div:last-child {
+    display: none;
+  }
+
+  .author {
+    margin: 0;
+  }
+
+  .reviews-block {
+    margin: 0 5%;
+    min-height: 20rem;
+  }
+}
+
+@media (max-width: 556px) and (min-width: 416px) {
+  .reviews-block div:nth-child(2) {
+    display: none;
+  }
+
+  .reviews-block {
+    margin: 0 5%;
+    min-height: 10rem;
+  }
+
+  .review-wrapper {
+    min-height: 30rem;
+  }
+
+  .h2-form {
+    margin: 2rem 5% 0 5%;
+  }
+}
+
+@media (max-width: 417px) {
+  .reviews-block div:first-child {
+    display: none;
+  }
+
+  .reviews-block div:last-child {
+    display: none;
+  }
+
+  .reviews-block {
+    margin: 0 5%;
+  }
+
+  .all-reviews {
+    width: 80%;
+  }
+
+  .review-wrapper {
+    min-height: 30rem;
+  }
+}
