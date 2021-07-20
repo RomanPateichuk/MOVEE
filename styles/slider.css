@@ -239,20 +239,4 @@
     display: block;
     margin: 0 auto;
   }
-
-  /* .slider-left-panel ul {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .slider-left-panel ul li:first-child:before {
-      content: url("../img/active_dot.png");
-    }
-  
-    .slider-left-panel ul li:before {
-      content: url("../img/dot.png");
-    }
-    .slider-left-panel ul li {
-      padding-left: 5%;
-    } */
 }
